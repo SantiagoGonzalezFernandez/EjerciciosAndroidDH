@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/MainActivity_EditText_TextoUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <EditText
+        android:id="@+id/MainActivity_EditText_TextoDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+
+    <Button
+        android:id="@+id/MainActivity_Button_Unir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unir"
+        android:background="@color/colorPrimary">
+    </Button>
+
+    <TextView
+        android:id="@+id/MainActivity_TextView_RepositorioDeTexto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:text="Hola como vaaaaaaaaaaaaaaaaaaaaaaaaaaa   fdsfsdfdsfdsfdsff f sdf sdfsdfdsf  fsd"
+        android:textSize="20sp"
+        android:layout_margin="10dp">
+    </TextView>
+
+</LinearLayout>

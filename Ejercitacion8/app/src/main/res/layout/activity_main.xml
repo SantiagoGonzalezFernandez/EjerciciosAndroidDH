@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/MainActivity_RelativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+
+    <!--En el RelativeLayout los elementos se van a ir apilando arriba a la izquierda, y los
+        componentes los podes ubicar segun otros. por ejemplo: ala derecha de x o abajo de y, etc-->
+
+    <TextView
+        android:id="@+id/MainActivity_TextView_Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:textSize="35sp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/MainActivity_EditText_Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/MainActivity_TextView_Nombre">
+    </EditText>
+
+    <TextView
+        android:id="@+id/MainActivity_TextView_Apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido:"
+        android:textSize="35sp"
+        android:layout_below="@id/MainActivity_TextView_Nombre">
+    </TextView>
+
+    <EditText
+        android:id="@+id/MainActivity_EditText_Apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/MainActivity_TextView_Apellido"
+        android:layout_below="@id/MainActivity_EditText_Nombre">
+    </EditText>
+
+    <TextView
+        android:id="@+id/MainActivity_TextView_Edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad:"
+        android:textSize="35sp"
+        android:layout_below="@id/MainActivity_TextView_Apellido">
+    </TextView>
+
+    <EditText
+        android:id="@+id/MainActivity_EditText_Edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/MainActivity_TextView_Edad"
+        android:layout_below="@id/MainActivity_EditText_Apellido">
+    </EditText>
+
+    <Button
+        android:id="@+id/MainActivity_Button_Mandar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mandar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/MainActivity_TextView_Edad"
+        android:background="@color/colorPrimary">
+    </Button>
+
+</RelativeLayout>
